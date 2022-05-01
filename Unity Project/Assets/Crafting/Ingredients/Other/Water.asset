@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685b6bf4368b48458526bb43e7f3745, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: 
+  uniqueName: water
+  displayName: Water
+  selectable: 1
+  BaseColour:
+  - {r: 0, g: 0.49859715, b: 1, a: 1}
+  - {r: 0.08543959, g: 0.46575084, b: 0.8490566, a: 1}
+  - {r: 0.052539393, g: 0.38774946, b: 0.7264151, a: 1}
+  - {r: 0.04435144, g: 0.32877952, b: 0.6132076, a: 1}
+  properties:
+    array:
+    - Key: wet
+      Value: 1

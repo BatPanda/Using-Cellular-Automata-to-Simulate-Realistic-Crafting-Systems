@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685b6bf4368b48458526bb43e7f3745, type: 3}
+  m_Name: HarmingPowder
+  m_EditorClassIdentifier: 
+  uniqueName: harming_powder
+  displayName: Harming Dust
+  selectable: 1
+  BaseColour:
+  - {r: 0.10698662, g: 0.21698111, b: 0.042304475, a: 1}
+  - {r: 0.08811502, g: 0.1509434, b: 0.05221311, a: 1}
+  - {r: 0.09297494, g: 0.23584908, b: 0.012608267, a: 1}
+  properties:
+    array: []

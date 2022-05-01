@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685b6bf4368b48458526bb43e7f3745, type: 3}
+  m_Name: HealingPotion
+  m_EditorClassIdentifier: 
+  uniqueName: healing_potion
+  displayName: Healing Potion
+  selectable: 0
+  BaseColour:
+  - {r: 0.044381097, g: 0.8301887, b: 0.40993726, a: 1}
+  - {r: 0.3328586, g: 0.9622642, b: 0.6827394, a: 1}
+  - {r: 0.045686405, g: 0.7264151, b: 0.30722958, a: 1}
+  - {r: 0, g: 0.745283, b: 0.2873078, a: 1}
+  properties:
+    array:
+    - Key: Healing
+      Value: 5
+    - Key: Potion
+      Value: 1
+    - Key: Wet
+      Value: 5

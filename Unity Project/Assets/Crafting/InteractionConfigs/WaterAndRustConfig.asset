@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: WaterAndRustConfig
+  m_EditorClassIdentifier: 
+  configName: Water and Rust
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: 5c1b72049635ab4429e836841d03ca19, type: 2}
+  - {fileID: 11400000, guid: f79c4009fdcc2a14c8dab16d23906a13, type: 2}
+  - {fileID: 11400000, guid: 919788abb1628d94fa09874233166920, type: 2}
+  - {fileID: 11400000, guid: 745fed87dfd13ce438a777610d38896b, type: 2}
+  - {fileID: 11400000, guid: 9cd97d61eb577104ea1e53d7b9f9f925, type: 2}
+  - {fileID: 11400000, guid: e0602861c22dc7447b0aa88b95ffe337, type: 2}
+  - {fileID: 11400000, guid: 829a87356bb9bf54a8ad4c766eed6d22, type: 2}
+  - {fileID: 11400000, guid: d6d10cb82cd020b4587ac012fb495015, type: 2}
+  - {fileID: 11400000, guid: d76bc4446f56e8943ae587f686fabd00, type: 2}
+  - {fileID: 11400000, guid: 0805a392fc4a1964c8a4fb9af0d3e231, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 2
+  ruleInput: "Ingredient air;\nIngredient water;\nIngredient copper;\nIngredient
+    copper_rusted_1;\nIngredient copper_rusted_2;\nIngredient copper_rusted_3;\nIngredient
+    copper_rusted_4;\nIngredient lightning;\nIngredient light_on;\nIngredient light_off;\nIngredient
+    steam;\n\nGroup conductor = water && copper && copper_rusted_1 && copper_rusted_2
+    &&  \tcopper_rusted_3 && copper_rusted_4;\n\nGroup gas = air && steam;\n\nWhen
+    water with south air swap south;\nPercent 50 When water with southeast gas swap
+    southeast;\nWhen water with southwest gas swap southwest;\nPercent 50 When water
+    with east gas swap east;\nWhen water with west gas swap west;\nPercent 10 When
+    water with north gas swap north;\nPercent 10 When water with northeast gas swap
+    northeast;\nPercent 10 When water with northwest gas swap northwest;\n\nPercent
+    2 When water around copper become copper_rusted_1;\nPercent 1 When gas around
+    copper become copper_rusted_1;\nPercent 2 When water around copper_rusted_1 become
+    copper_rusted_2;\nPercent 1 When gas around copper_rusted_1 become copper_rusted_2;\nPercent
+    2 When water around copper_rusted_2 become copper_rusted_3;\nPercent 1 When gas
+    around copper_rusted_2 become copper_rusted_3;\nPercent 2 When water around copper_rusted_3
+    become copper_rusted_4;\nPercent 1 When gas around copper_rusted_3 become copper_rusted_4;"

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685b6bf4368b48458526bb43e7f3745, type: 3}
+  m_Name: ActivatingSalt
+  m_EditorClassIdentifier: 
+  uniqueName: activating_salt
+  displayName: Activating Salt
+  selectable: 1
+  BaseColour:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.8082354, g: 0.9245283, b: 0.9148181, a: 1}
+  - {r: 0.9254902, g: 0.80784315, b: 0.91963035, a: 1}
+  properties:
+    array:
+    - Key: Spice
+      Value: 1

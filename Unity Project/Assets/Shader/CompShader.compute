@@ -1,0 +1,34 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+
+float Resolution;
+
+float Length;
+float Width;
+
+StructuredBuffer<float4> colour_buffer;
+StructuredBuffer<int> update_buffer;
+
+
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+
+    float row_length = Resolution / (Length);
+    float col_length = Resolution / (Width);
+
+    int row = ((float)id.x) / row_length;
+    int col = Length-(((float)id.y) / col_length); 
+    
+    float4 color = colour_buffer[Width*row+col];
+
+    if (update_buffer[Width*row+col] == 1) {
+        Result[id.xy] = colour_buffer[Width * row+col];
+    }
+
+
+    //Result[id.xy] = float4(id.x & id.y, (id.x & 15)/15.0, (id.y & 15)/15.0, 0.0);
+}

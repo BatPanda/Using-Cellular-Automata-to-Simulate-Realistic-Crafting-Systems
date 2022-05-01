@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: CrazyLinesConfig
+  m_EditorClassIdentifier: 
+  configName: Crazy Lines
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: 632ae31705e622747bcc9db8c0340c25, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 0
+  ruleInput: 'Ingredient air;
+
+    Ingredient black_glitter;
+
+
+    When air with
+    east black_glitter become black_glitter;
+
+    When air with west black_glitter
+    become black_glitter;
+
+    When air with north black_glitter become black_glitter;'

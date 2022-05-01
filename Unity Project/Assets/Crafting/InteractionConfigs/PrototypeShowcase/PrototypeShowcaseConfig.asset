@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: PrototypeShowcaseConfig
+  m_EditorClassIdentifier: 
+  configName: Prototype Showcase
+  ingredients:
+  - {fileID: 11400000, guid: 2990c9259b127614f9adba932983081a, type: 2}
+  - {fileID: 11400000, guid: 20024c7ef9194b9448ede561dd5638a9, type: 2}
+  - {fileID: 11400000, guid: dca9e6917858dda42948c2e9951ce5da, type: 2}
+  - {fileID: 11400000, guid: 3130f164715bb7448830790a15a0bade, type: 2}
+  - {fileID: 11400000, guid: 1e9aaff9e94a5294ba3a2fc4eee1eead, type: 2}
+  - {fileID: 11400000, guid: 5d0548f0e3a1060409755b424b5ee124, type: 2}
+  - {fileID: 11400000, guid: 9d986b6e3be633b449a9cb1d6abc2bee, type: 2}
+  - {fileID: 11400000, guid: d25a34bf64efb554a87fe3782b01e340, type: 2}
+  - {fileID: 11400000, guid: 045b937429f9e134698cd5473be1f8ed, type: 2}
+  - {fileID: 11400000, guid: 1545a764aca6bcb478ee23366e911ee6, type: 2}
+  - {fileID: 11400000, guid: 7b52481df061a8a4da9ec960391964e1, type: 2}
+  - {fileID: 11400000, guid: f70f6ce9c92cbad45ba6561a11454f13, type: 2}
+  - {fileID: 11400000, guid: 92e88622b78651f44ba2bdb3d4529193, type: 2}
+  - {fileID: 11400000, guid: 786326691cd5cf842bddd0486fbb762f, type: 2}
+  - {fileID: 11400000, guid: 40023a9085183bf49b4963641bd21aa0, type: 2}
+  - {fileID: 11400000, guid: e5c1a858e423f1d42a59a0b2ce809347, type: 2}
+  - {fileID: 11400000, guid: 6a19a717ed31411408e8fc6d89249b2b, type: 2}
+  - {fileID: 11400000, guid: 54975c69b5df64045974f44e635cc242, type: 2}
+  - {fileID: 11400000, guid: 2372a8678042e764ab0adee4d98d7c8e, type: 2}
+  - {fileID: 11400000, guid: aea80729d6e6efb4abf5f5f9d5044026, type: 2}
+  - {fileID: 11400000, guid: 601b4643054ff534fae26ffae297c520, type: 2}
+  - {fileID: 11400000, guid: fc9136b9904eb0746a793d0612a307c8, type: 2}
+  - {fileID: 11400000, guid: f39325477eabcaa48a107aa651342939, type: 2}
+  - {fileID: 11400000, guid: 32e0dfcfc4b0e6946a4b75cc6764386d, type: 2}
+  - {fileID: 11400000, guid: 9bbdadf41e969044fafc45777f17783e, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 1
+  ruleInput: "Ingredient alpha_air;\r\nIngredient activating_salt;\r\nIngredient
+    blinding_potion;\r\nIngredient blinding_potion_static;\r\nIngredient blinding_powder;\r\nIngredient
+    gaia_leaves;\r\nIngredient glow_powder;\r\nIngredient glowshroom_powder;\r\nIngredient
+    ground_spider_eye;\r\nIngredient gunk;\r\nIngredient gunk_static;\r\nIngredient
+    hard_honey;\r\nIngredient healing_potion;\r\nIngredient healing_potion_static;\r\nIngredient
+    healing_powder;\r\nIngredient honey;\r\nIngredient mundane_powder;\r\nIngredient
+    nightvision_potion;\r\nIngredient nightvision_potion_static;\r\nIngredient poison_potion;\r\nIngredient
+    poison_potion_static;\r\nIngredient poison_powder;\r\nIngredient rice_paper;\r\nIngredient
+    static_water;\r\nIngredient water;\r\n\r\n\r\nGroup wet = honey && water && static_water
+    && blinding_potion && blinding_potion_static && gunk && gunk_static && healing_potion
+    && healing_potion_static && nightvision_potion && nightvision_potion_static &&
+    poison_potion && poison_potion_static;\r\n\r\nGroup liquid = water && blinding_potion
+    && gunk && healing_potion && nightvision_potion && poison_potion;\r\nGroup static_liquid
+    = static_water && blinding_potion_static && gunk_static && healing_potion_static
+    && nightvision_potion_static && poison_potion_static;\r\n\r\nGroup gravity =
+    ground_spider_eye && activating_salt && honey && poison_powder && glowshroom_powder
+    && blinding_powder && gaia_leaves && glow_powder && healing_powder && mundane_powder;\r\nGroup
+    powder = ground_spider_eye && activating_salt && poison_powder && glowshroom_powder
+    && blinding_powder && gaia_leaves && glow_powder && healing_powder && mundane_powder;\r\n\r\nGroup
+    potion = blinding_potion && blinding_potion_static && gunk && gunk_static &&
+    healing_potion && healing_potion_static && nightvision_potion && nightvision_potion_static
+    && poison_potion && poison_potion_static;\r\nGroup non_potion_liquid = water
+    && static_water;\r\n\r\nGroup salt_result = poison_powder && healing_powder;\r\n\r\nWhen
+    wet around rice_paper become alpha_air;\r\nWhen activating_salt around ground_spider_eye
+    become poison_powder;\r\nWhen activating_salt around gaia_leaves become healing_powder;\r\n\r\nWhen
+    healing_powder around glowshroom_powder become glow_powder;\r\nWhen poison_powder
+    around glowshroom_powder become blinding_powder;\r\n\r\nPercent 50 When poison_powder
+    around healing_powder become mundane_powder;\r\nWhen healing_powder around poison_powder
+    become mundane_powder;\r\n\r\nWhen salt_result around activating_salt become
+    alpha_air;\r\nWhen glow_powder around healing_powder become alpha_air; \r\nWhen
+    blinding_powder around poison_powder become alpha_air; \r\n\r\nWhen poison_powder
+    with south ground_spider_eye swap south;\r\nWhen healing_powder with south gaia_leaves
+    swap south;\r\n\r\nWhen powder with south liquid swap south; \r\nWhen powder
+    with south static_liquid swap south; \r\n\r\nWhen gravity with south alpha_air
+    swap south;\r\nPercent 50 When powder with southeast alpha_air swap southeast;\r\nWhen
+    powder with southwest alpha_air swap southwest;\r\n \r\nWhen blinding_powder
+    around non_potion_liquid become blinding_potion;\r\nWhen mundane_powder around
+    non_potion_liquid become gunk;\r\nWhen healing_powder around non_potion_liquid
+    become healing_potion;\r\nWhen glow_powder around non_potion_liquid become nightvision_potion;\r\nWhen
+    poison_powder around non_potion_liquid become poison_potion;\r\n\r\nWhen blinding_potion
+    around blinding_powder become blinding_potion;\r\nWhen gunk around mundane_powder
+    become gunk;\r\nWhen healing_potion around healing_powder become healing_potion;\r\nWhen
+    nightvision_potion around glow_powder become nightvision_potion;\r\nWhen poison_potion
+    around poison_powder become poison_potion;\r\n\r\nWhen alpha_air around static_water
+    become water;\r\nWhen alpha_air around blinding_potion_static become blinding_potion;\r\nWhen
+    alpha_air around gunk_static become gunk;\r\nWhen alpha_air around healing_potion_static
+    become healing_potion;\r\nWhen alpha_air around nightvision_potion_static become
+    nightvision_potion;\r\nWhen alpha_air around poison_potion_static become poison_potion;\r\n\r\nWhen
+    potion with north liquid swap north;\r\nWhen potion with north static_liquid
+    swap north;\r\nWhen liquid with south alpha_air swap south;\r\nPercent 20 When
+    liquid with east alpha_air swap east;\r\nPercent 20 When liquid with west alpha_air
+    swap west;\r\nPercent 20 When liquid with southeast alpha_air swap southeast;\r\nPercent
+    20 When liquid with southwest alpha_air swap southwest;\r\n\r\nWhen water become
+    static_water;\r\nWhen blinding_potion become blinding_potion_static;\r\nWhen
+    gunk become gunk_static;\r\nWhen healing_potion become healing_potion_static;\r\nWhen
+    nightvision_potion become nightvision_potion_static;\r\nWhen poison_potion become
+    poison_potion_static;\r\n\r\nPercent 20 When honey with east alpha_air swap east;\r\nPercent
+    20 When honey with west alpha_air swap west;\r\nPercent 1 When honey become hard_honey;\r\n\r\nPercent
+    2 When hard_honey with south alpha_air swap south;\r\nPercent 2 When hard_honey
+    with southeast alpha_air swap southeast;\r\nPercent 2 When hard_honey with southwest
+    alpha_air swap southwest;"

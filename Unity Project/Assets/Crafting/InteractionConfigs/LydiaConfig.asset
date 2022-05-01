@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: LydiaConfig
+  m_EditorClassIdentifier: 
+  configName: shark on fire
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: 77036f5ff79c2304d9046bd556c36fac, type: 2}
+  - {fileID: 11400000, guid: 46c3a246bf9ca0c4f85086b933f95381, type: 2}
+  - {fileID: 11400000, guid: 829a87356bb9bf54a8ad4c766eed6d22, type: 2}
+  - {fileID: 11400000, guid: 37d51e12b09ae0e45beacca440a8341b, type: 2}
+  - {fileID: 11400000, guid: 0773272228c75724c889c53f00afe270, type: 2}
+  - {fileID: 11400000, guid: bf1f9d8da0254334fbaba6866c58fa07, type: 2}
+  - {fileID: 11400000, guid: 800a755aa4b696847bf21a720e92c3da, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 0
+  ruleInput: "Ingredient air;\nIngredient fire;\nIngredient ember;\nIngredient lightning;\nIngredient
+    rock;\nIngredient smoke;\nIngredient sand;\nIngredient wood;\n\nGroup hot = fire
+    && ember && smoke; \nGroup gas = air && smoke;\n\nWhen sand with south gas swap
+    south;\n\nPercent 50 When sand with southeast air swap southeast;\nWhen sand
+    with southwest air swap southwest;\n\nWhen sand with south wood become smoke;\n\nWhen
+    smoke around rock become wood;\n\nPercent 30 When hot around wood become fire;\n\nPercent
+    50 When fire become ember;\nWhen ember with north gas swap north;\nPercent 50
+    When ember with northeast gas swap northeast;\nWhen ember with northwest gas
+    swap northwest;\n\nPercent 50 When ember become smoke;\nWhen smoke with north
+    air swap north;\nPercent 50 When smoke with northeast air swap northeast;\nWhen
+    smoke with northwest air swap northwest;\nPercent 50 When smoke with east air
+    swap east;\nWhen smoke with west air swap west;\nPercent 4 When smoke become
+    air;\n\n\n\n\n"

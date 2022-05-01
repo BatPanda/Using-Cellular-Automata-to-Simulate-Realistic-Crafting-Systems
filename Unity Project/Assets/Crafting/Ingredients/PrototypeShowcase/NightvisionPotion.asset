@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685b6bf4368b48458526bb43e7f3745, type: 3}
+  m_Name: NightvisionPotion
+  m_EditorClassIdentifier: 
+  uniqueName: nightvision_potion
+  displayName: Nightvision Potion
+  selectable: 0
+  BaseColour:
+  - {r: 0.29654676, g: 0.7924528, b: 0.7828546, a: 1}
+  - {r: 0.9270326, g: 0.9811321, b: 0.69111186, a: 1}
+  - {r: 0.41862458, g: 0.89415437, b: 0.9716981, a: 1}
+  - {r: 0.29619074, g: 0.673486, b: 0.735849, a: 1}
+  - {r: 0.15331665, g: 0.6364577, b: 0.7169812, a: 1}
+  - {r: 0.08721956, g: 0.68960655, b: 0.7924528, a: 1}
+  properties:
+    array:
+    - Key: Glow
+      Value: 5
+    - Key: Wet
+      Value: 5
+    - Key: Potion
+      Value: 1

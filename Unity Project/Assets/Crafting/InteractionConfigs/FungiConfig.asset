@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: FungiConfig
+  m_EditorClassIdentifier: 
+  configName: Fungi
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: f79c4009fdcc2a14c8dab16d23906a13, type: 2}
+  - {fileID: 11400000, guid: 919788abb1628d94fa09874233166920, type: 2}
+  - {fileID: 11400000, guid: 745fed87dfd13ce438a777610d38896b, type: 2}
+  - {fileID: 11400000, guid: 9cd97d61eb577104ea1e53d7b9f9f925, type: 2}
+  - {fileID: 11400000, guid: e0602861c22dc7447b0aa88b95ffe337, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 0
+  ruleInput: 'Ingredient air;
+
+    Ingredient copper;
+
+    Ingredient copper_rusted_1;
+
+    Ingredient
+    copper_rusted_2;
+
+    Ingredient copper_rusted_3;
+
+    Ingredient copper_rusted_4;
+
+
+    Percent
+    5 When copper around air become copper_rusted_1;
+
+    Percent 5 When copper_rusted_1
+    around air become copper_rusted_2;
+
+    Percent 5 When copper_rusted_2 around
+    air become copper_rusted_3;
+
+    Percent 5 When copper_rusted_3 around air become
+    copper_rusted_4;'

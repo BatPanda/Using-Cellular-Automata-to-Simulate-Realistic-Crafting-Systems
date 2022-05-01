@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: SunflowerConfig
+  m_EditorClassIdentifier: 
+  configName: Sunflower Fun
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: cf5ebd11d21dafc42aef48409cc8c407, type: 2}
+  - {fileID: 11400000, guid: c2e1adf497a2a754b888c11261749ade, type: 2}
+  - {fileID: 11400000, guid: e837db86a94c6c24b8e691a92af6b3d4, type: 2}
+  - {fileID: 11400000, guid: bf2163cf875ad3843a5b864b4843c37f, type: 2}
+  - {fileID: 11400000, guid: a16ff19a116a47248bdcb9b994768585, type: 2}
+  - {fileID: 11400000, guid: eb879e7cb1fd3404f87d0770dc185f07, type: 2}
+  - {fileID: 11400000, guid: 722e70be0246f52428090a0c8fa50805, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 0
+  ruleInput: 'Ingredient stem;
+
+    Ingredient active_stem;
+
+    Ingredient soil;
+
+    Ingredient
+    seed;
+
+    Ingredient air;
+
+    Ingredient sunflower_core;
+
+    Ingredient sunflower_petal;
+
+    Ingredient
+    sunflower_petal_edge;
+
+
+    Group falling = soil && seed;
+
+
+    When falling
+    with south air swap south;
+
+    Percent 50 When falling with southeast air swap
+    southeast;
+
+    When falling with southwest air swap southwest;
+
+
+    Percent
+    10 When seed with south soil become active_stem;
+
+
+    Percent 20 When air with
+    south active_stem become active_stem;
+
+    Percent 10 When air with southeast
+    active_stem become active_stem;
+
+    Percent 10 When air with southwest active_stem
+    become active_stem;
+
+
+    Percent 10 When active_stem become sunflower_core;
+
+
+    When
+    sunflower_core around air become sunflower_petal;
+
+    When sunflower_core around
+    stem become sunflower_petal;
+
+
+    When active_stem around active_stem become
+    stem;
+
+'

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3685b6bf4368b48458526bb43e7f3745, type: 3}
+  m_Name: CopperRust4
+  m_EditorClassIdentifier: 
+  uniqueName: copper_rusted_4
+  displayName: Rust 4
+  selectable: 0
+  BaseColour:
+  - {r: 0.48166603, g: 0.9339623, b: 0.8771022, a: 1}
+  - {r: 0.4058383, g: 0.8490566, b: 0.7933377, a: 1}
+  - {r: 0.17974956, g: 0.6886792, b: 0.6246995, a: 1}
+  - {r: 0.11486879, g: 0.8301887, b: 0.74026275, a: 1}
+  properties:
+    array: []

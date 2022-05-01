@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: SandSimConfig
+  m_EditorClassIdentifier: 
+  configName: Sand Sim
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: 0773272228c75724c889c53f00afe270, type: 2}
+  - {fileID: 11400000, guid: 37d51e12b09ae0e45beacca440a8341b, type: 2}
+  - {fileID: 11400000, guid: 2de8df14191c06a46bdcec9244992f6e, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 0
+  ruleInput: 'Ingredient sand;
+
+    Ingredient air;
+
+    Ingredient drain;
+
+
+    When
+    sand with south air swap south;
+
+
+    Percent 50 When sand with southeast air
+    swap southeast;
+
+    When sand with southwest air swap southwest;
+
+
+    When
+    sand with south drain become air;
+
+    When sand with east drain become air;
+
+    When
+    sand with west drain become air;'

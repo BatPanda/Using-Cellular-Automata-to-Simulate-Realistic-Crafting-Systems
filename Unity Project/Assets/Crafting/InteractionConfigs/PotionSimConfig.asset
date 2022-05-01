@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675cf57b1f9a99347ad982da46ced279, type: 3}
+  m_Name: PotionSimConfig
+  m_EditorClassIdentifier: 
+  configName: Potion Sim
+  ingredients:
+  - {fileID: 11400000, guid: 69bd1cc7d4241324bb05ce9706a16f55, type: 2}
+  - {fileID: 11400000, guid: 7772442b8db66df4fb8d30fc2118ed49, type: 2}
+  - {fileID: 11400000, guid: 0700b5f439949d1448f52715038411c5, type: 2}
+  - {fileID: 11400000, guid: 5c1b72049635ab4429e836841d03ca19, type: 2}
+  - {fileID: 11400000, guid: 0805a392fc4a1964c8a4fb9af0d3e231, type: 2}
+  sortingBiasOrder: 1
+  startingStateIndex: 0
+  ruleInput: 'Ingredient air;
+
+    Ingredient harming_powder;
+
+    Ingredient healing_powder;
+
+    Ingredient
+    water;
+
+    Ingredient steam;
+
+
+    Group powder = harming_powder && healing_powder;
+
+    Group
+    gas = air && steam;
+
+
+    When powder with south gas swap south;
+
+    Percent
+    50 When powder with southeast gas swap southeast;
+
+    When powder with southwest
+    gas swap southwest;
+
+
+    When water with south air swap south;
+
+    Percent
+    50 When water with southeast gas swap southeast;
+
+    When water with southwest
+    gas swap southwest;
+
+    Percent 50 When water with east gas swap east;
+
+    When
+    water with west gas swap west;'
