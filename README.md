@@ -22,7 +22,7 @@ While you are testing this out, why not try make the following?
 
 Navigate to ./Unity Project to find the project.
 
-When in the Showcase scene (should see nice looking assets) click the canvas dropdown/cauldron/inside/CA to get access the the CA controller.
+When in the Showcase scene (should see nice looking assets) click the canvas dropdown/cauldron/inside/CA to get access the CA controller.
 
 If you want to write your own CA have a look at some of the examples in the /assets/crafting folder. Right clicking and going to the create menu should have the crafting options at the very top of the list for you to make ingredients and configs. When you are ready plug it into the CA game object and hit go! Keep in mind you will also have to write a processer script if you want to yield items. Have fun!
 
